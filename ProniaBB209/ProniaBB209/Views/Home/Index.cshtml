@@ -1,5 +1,4 @@
-﻿@using ProniaBB209.Models
-@using ProniaBB209.ViewModels
+﻿
 
 @model HomeVM
 
@@ -203,7 +202,8 @@
                                             </div>
                                         </div>
                                         <div class="product-content">
-                                            <a class="product-name" href="shop.html">@product.Name</a>
+                                            <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id" class="product-name">@product.Name</a>
+                                            @* <a href="shop/detail/@product.Id" class="product-name">@product.Name</a> *@
                                             <div class="price-box pb-1">
                                                 <span class="new-price">$@product.Price</span>
                                             </div>

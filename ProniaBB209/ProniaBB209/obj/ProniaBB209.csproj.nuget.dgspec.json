@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sabir\\Desktop\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj": {}
+    "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sabir\\Desktop\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj": {
+    "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sabir\\Desktop\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj",
+        "projectUniqueName": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj",
         "projectName": "ProniaBB209",
-        "projectPath": "C:\\Users\\sabir\\Desktop\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj",
+        "projectPath": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\ProniaBB209.csproj",
         "packagesPath": "C:\\Users\\sabir\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sabir\\Desktop\\ProniaBB209\\ProniaBB209\\obj\\",
+        "outputPath": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
