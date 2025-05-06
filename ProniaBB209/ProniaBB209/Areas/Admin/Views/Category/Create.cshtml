@@ -8,8 +8,7 @@
                
                 <form method="post" class="forms-sample">
                     <div class="form-group">
-                        <label for="exampleInputName1">Name</label>
-                        
+                        <label asp-for="Name">Name</label>
                         <input asp-for="Name"  class="form-control" placeholder="Name">
                         <span class="text-danger" asp-validation-for="Name"></span>
                     </div>

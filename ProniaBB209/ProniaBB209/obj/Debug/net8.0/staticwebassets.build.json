@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ELzxCsLAio+Nzw8kHGklDl6ZYWRMtnvjWn450CRETqg=",
+  "Hash": "nBaLssChmj9uHwVWI4mY+bGHw8KaHWWiFh5ta0M+bno=",
   "Source": "ProniaBB209",
   "BasePath": "_content/ProniaBB209",
   "Mode": "Default",
@@ -4634,6 +4634,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\dark.png"
     },
     {
+      "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\flower slide 2.jpg",
+      "SourceId": "ProniaBB209",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\",
+      "BasePath": "_content/ProniaBB209",
+      "RelativePath": "assets/images/website-images/flower slide 2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\flower slide 2.jpg"
+    },
+    {
       "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\narcissus.jpg",
       "SourceId": "ProniaBB209",
       "SourceType": "Discovered",
@@ -4708,6 +4727,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\service.png"
+    },
+    {
+      "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\SlideFlower.webp",
+      "SourceId": "ProniaBB209",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\",
+      "BasePath": "_content/ProniaBB209",
+      "RelativePath": "assets/images/website-images/SlideFlower.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\SlideFlower.webp"
     },
     {
       "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\js\\main.js",
