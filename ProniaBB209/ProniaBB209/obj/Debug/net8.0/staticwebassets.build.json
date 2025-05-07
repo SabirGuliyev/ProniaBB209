@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nBaLssChmj9uHwVWI4mY+bGHw8KaHWWiFh5ta0M+bno=",
+  "Hash": "TuO//PooTlPaGaBn2E5ooB4YTU+3fF/R8kj0sYrCP2I=",
   "Source": "ProniaBB209",
   "BasePath": "_content/ProniaBB209",
   "Mode": "Default",
@@ -4632,25 +4632,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\dark.png"
-    },
-    {
-      "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\flower slide 2.jpg",
-      "SourceId": "ProniaBB209",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\",
-      "BasePath": "_content/ProniaBB209",
-      "RelativePath": "assets/images/website-images/flower slide 2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\flower slide 2.jpg"
     },
     {
       "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\narcissus.jpg",

@@ -2,31 +2,62 @@
 using Microsoft.EntityFrameworkCore;
 using ProniaBB209.DAL;
 using ProniaBB209.Models;
+using ProniaBB209.Utilities.Enums;
+using ProniaBB209.Utilities.Extensions;
+using ProniaBB209.ViewModels;
 
 namespace ProniaBB209.Areas.Admin.Controllers
 {
     [Area("Admin")]
     public class SlideController : Controller
     {
+
         private readonly AppDbContext _context;
         private readonly IWebHostEnvironment _env;
 
-        public SlideController(AppDbContext context,IWebHostEnvironment env)
+        public SlideController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
             _env = env;
         }
         public async Task<IActionResult> Index()
         {
-            List<Slide> slides = await _context.Slides.ToListAsync();
-            return View(slides);
+            List<GetSlideVM> slideVMs = await _context.Slides.Select(s =>
+            new GetSlideVM
+            {
+                Id = s.Id,
+                Title = s.Title,
+                Image = s.Image,
+                CreatedAt = s.CreatedAt,
+                Order = s.Order,
+            }
+            ).ToListAsync();
+
+
+
+            return View(slideVMs);
+
+
+
+            //List<GetSlideVM> slideVMs= new List<GetSlideVM>();
+            //foreach (var slide in slides)
+            //{
+            //    slideVMs.Add(new GetSlideVM
+            //    {
+            //        CreatedAt = slide.CreatedAt,
+            //        Title = slide.Title,
+            //        Image = slide.Image,
+            //        Id = slide.Id,
+            //        Order = slide.Order,
+            //    });
+            //}
         }
         //public string Test()
         //{ 
         //ahsjgdjhsagdjagsdjhasg.jpg
         //    //hmsjavahsvd-amsbdabmdsaflowers.jpg
         //    //.jpg
-         // flowers.jpgjhgamgdamsdgmashdgamdsmsagd
+        // flowers.jpgjhgamgdamsdgmashdgamdsmsagd
         //    return Guid.NewGuid().ToString();
         //}
         public IActionResult Create()
@@ -34,32 +65,35 @@ namespace ProniaBB209.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Create(Slide slide)
+        public async Task<IActionResult> Create(CreateSlideVM slideVM)
         {
+            if (!ModelState.IsValid) return View();
 
-
-            if (!slide.Photo.ContentType.Contains("image/"))
+            if (!slideVM.Photo.ValidateType("image/"))
             {
-                ModelState.AddModelError(nameof(Slide.Photo), "File type is incorrect");
+                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File type is incorrect");
                 return View();
             }
 
-            if (slide.Photo.Length > 1 * 1024*1024)
+            if (!slideVM.Photo.ValidateSize(FileSize.MB, 1))
             {
-                ModelState.AddModelError(nameof(Slide.Photo), "File size shoul be less than 2MB");
+                ModelState.AddModelError(nameof(CreateSlideVM.Photo), "File size shoul be less than 1MB");
                 return View();
             }
- 
-             string fileName =string.Concat(Guid.NewGuid().ToString(), slide.Photo.FileName);
-            //flowers.png
-            string path = Path.Combine(_env.WebRootPath, "assets","images","website-images",fileName);
 
-            FileStream fl = new FileStream(path,FileMode.Create);
-            await slide.Photo.CopyToAsync(fl);
+            string fileName = await slideVM.Photo.CreateFileAsync(_env.WebRootPath, "assets", "images", "website-images");
 
-            slide.Image = fileName;
 
-            slide.CreatedAt = DateTime.Now;
+            Slide slide = new Slide
+            {
+                Title = slideVM.Title,
+                SubTitle = slideVM.SubTitle,
+                Description = slideVM.Description,
+                Order = slideVM.Order,
+                Image = fileName,
+                CreatedAt = DateTime.Now
+            };
+
             await _context.Slides.AddAsync(slide);
             await _context.SaveChangesAsync();
 
@@ -70,24 +104,22 @@ namespace ProniaBB209.Areas.Admin.Controllers
 
 
 
+        }
 
 
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id is null || id <= 0) return BadRequest();
 
+            Slide? slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
+            if (slide is null) return NotFound();
 
+            slide.Image.DeleteFile(_env.WebRootPath, "assets", "images", "website-images");
 
-
-
-            //if (!ModelState.IsValid) return View();
-
-
-
-
-
-
-
-
-
+            _context.Remove(slide);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
 
         }
     }
