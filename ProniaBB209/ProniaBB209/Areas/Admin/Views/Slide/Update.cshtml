@@ -1,0 +1,48 @@
+﻿@model UpdateSlideVM
+<div class="row">
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Slide</h4>
+
+                <form method="post" enctype="multipart/form-data" class="forms-sample">
+                    <div class="form-group">
+                      <img style="width:200px;height:150px;" src="~/assets/images/website-images/@Model.Image"/>
+                        <input type="hidden" value="@Model.Image" asp-for="Image"  class="form-control" >
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Photo">Photo</label>
+                        <input asp-for="Photo" accept="image/*" class="form-control" placeholder="Photo">
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" class="form-control" placeholder="Title">
+                        <span class="text-danger" asp-validation-for="Title"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SubTitle">SubTitle</label>
+                        <input asp-for="SubTitle" class="form-control" placeholder="SubTitle">
+                        <span class="text-danger" asp-validation-for="SubTitle"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Order">Order</label>
+                        <input asp-for="Order" class="form-control" placeholder="Order">
+                        <span class="text-danger" asp-validation-for="Order"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="Description">Description</label>
+                        <textarea rows="7" asp-for="Description" class="form-control" placeholder="Description">
+                        </textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

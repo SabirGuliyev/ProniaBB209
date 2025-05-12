@@ -475,11 +475,11 @@
                                     <div class="product-img">
                                         <a href="single-product-variable.html">
                                             <img class="primary-img"
-                                                 src="~/assets/images/website-images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true).Image"
-                                                 alt="Product Images" />
+                                                 src="~/assets/images/website-images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==true)?.Image"
+                                                 alt="@product.Name" />
                                             <img class="secondary-img"
-                                                 src="~/assets/images/website-images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==false).Image"
-                                                 alt="Product Images" />
+                                                 src="~/assets/images/website-images/@product.ProductImages.FirstOrDefault(pi=>pi.IsPrimary==false)?.Image"
+                                                 alt="@product.Name" />
                                         </a>
                                         <div class="product-add-action">
                                             <ul>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TuO//PooTlPaGaBn2E5ooB4YTU+3fF/R8kj0sYrCP2I=",
+  "Hash": "j1ebd+Su1dyNghyJnTe69tmSO1AMCVieZJsASDKziX0=",
   "Source": "ProniaBB209",
   "BasePath": "_content/ProniaBB209",
   "Mode": "Default",
@@ -3665,6 +3665,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\testimonial\\user\\3.png"
     },
     {
+      "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\0fa5f975-b7c5-4ef7-a11a-e57fca1bca4aimages (1).jpg",
+      "SourceId": "ProniaBB209",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\",
+      "BasePath": "_content/ProniaBB209",
+      "RelativePath": "assets/images/website-images/0fa5f975-b7c5-4ef7-a11a-e57fca1bca4aimages (1).jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\0fa5f975-b7c5-4ef7-a11a-e57fca1bca4aimages (1).jpg"
+    },
+    {
       "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\1.png",
       "SourceId": "ProniaBB209",
       "SourceType": "Discovered",
@@ -4632,6 +4651,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\dark.png"
+    },
+    {
+      "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\f9bb970e-3f44-4e94-b689-41ee8645dc5aslide flower 3.jpg",
+      "SourceId": "ProniaBB209",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\",
+      "BasePath": "_content/ProniaBB209",
+      "RelativePath": "assets/images/website-images/f9bb970e-3f44-4e94-b689-41ee8645dc5aslide flower 3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\website-images\\f9bb970e-3f44-4e94-b689-41ee8645dc5aslide flower 3.jpg"
     },
     {
       "Identity": "C:\\Users\\sabir\\Desktop\\ProniaBB209MVC\\ProniaBB209\\ProniaBB209\\wwwroot\\assets\\images\\website-images\\narcissus.jpg",
