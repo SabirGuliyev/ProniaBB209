@@ -25,7 +25,6 @@ namespace ProniaBB209.Controllers
         }
         public async Task<IActionResult> Index()
         {
-            
 
             HomeVM homeVM = new HomeVM {
             Slides=await _context.Slides
