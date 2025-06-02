@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProniaBB209")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e1a648e441d9cfae38ddc1077023d7fff9621537")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92c159564f8f2255ea2a7f772cc123ddac78d7ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProniaBB209")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProniaBB209")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

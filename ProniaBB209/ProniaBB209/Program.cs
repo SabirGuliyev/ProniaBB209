@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProniaBB209.DAL;
 using ProniaBB209.Models;
+using ProniaBB209.Services;
+
 
 //Singleton
 //Scoped
@@ -31,6 +33,9 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     //opt.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);
     opt.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
+
+
+builder.Services.AddScoped<ILayoutService,LayoutService>();
 
 var app = builder.Build();
 
