@@ -15,8 +15,15 @@ namespace ProniaBB209.ViewModels
         [Required]
         public int? CategoryId { get; set; }
         public List<int>? TagIds { get; set; }
+        public List<int>? ImageIds { get; set; }
+
         public string PrimaryImage { get; set; }
+        public string SecondaryImage { get; set; }
+
+        public List<ProductImage>? ProductImages { get; set; }
         public IFormFile? MainPhoto { get; set; }
+        public IFormFile? SecondaryPhoto { get; set; }
+        public List<IFormFile>? AdditionalPhotos { get; set; }
         public List<Category>? Categories { get; set; }
         public List<Tag>? Tags { get; set; }
     }

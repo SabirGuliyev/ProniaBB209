@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProniaBB209.DAL;
 using ProniaBB209.Models;
+using ProniaBB209.Utilities.Exceptions;
 using ProniaBB209.ViewModels;
 
 namespace ProniaBB209.Controllers
@@ -23,7 +24,7 @@ namespace ProniaBB209.Controllers
         //true false null
         public async Task<IActionResult> Detail(int? id)
         {
-            if (id is null || id <= 0)  return BadRequest();
+            if (id is null || id <= 0)  throw new BadRequestException($"{id} is wrong");
 
             Product? product =await _context.Products
                 .Include(p=>p.ProductImages.OrderByDescending(pi=>pi.IsPrimary))
@@ -32,7 +33,7 @@ namespace ProniaBB209.Controllers
                 .ThenInclude(pt=>pt.Tag)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
-            if (product is null) return NotFound();
+            if (product is null) throw new NotFoundException($"{id} id-li mehsul tapilmadi");
 
             DetailVM detailVM = new DetailVM 
             { 

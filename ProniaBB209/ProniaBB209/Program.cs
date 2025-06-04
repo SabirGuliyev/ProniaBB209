@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using ProniaBB209.DAL;
+using ProniaBB209.Middlewares;
 using ProniaBB209.Models;
 using ProniaBB209.Services;
 
@@ -44,6 +45,7 @@ var app = builder.Build();
 app.UseAuthentication();
 app.UseAuthorization();
 app.UseStaticFiles();
+app.UseMiddleware<GlobalExceptionHandlerMiddleware>();
 
 app.MapControllerRoute(
     "admin",
